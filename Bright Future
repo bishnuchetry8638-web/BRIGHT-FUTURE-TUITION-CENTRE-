@@ -1,0 +1,330 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0A1F44" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Bright Future" />
+  <meta name="description" content="BRIGHT FUTURE TUITION CENTRE at Tarajan, Dhemaji, Assam, India. Quality academic coaching for Classes 1 to 10 and special Jawahar Navodaya Vidyalaya (JNV) entrance preparation." />
+  <meta name="keywords" content="Bright Future Tuition Centre, Tarajan, Dhemaji, Assam, Class 1 to 10 tuition, Jawahar Navodaya Vidyalaya, JNV entrance coaching, Anisha Chetry, Gyandeep Chetry" />
+  <title>BRIGHT FUTURE TUITION CENTRE | Tarajan, Dhemaji, Assam</title>
+
+  <!-- Tailwind CSS CDN for responsive mobile & desktop layout -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: "#06132B",
+              900: "#0A1F44",
+              800: "#0F2C59",
+              700: "#173C75",
+              600: "#1E4E96"
+            },
+            gold: {
+              600: "#CA8A04",
+              500: "#EAB308",
+              400: "#F5B800",
+              300: "#FACC15",
+              100: "#FEF9C3",
+              50: "#FFFDF2"
+            }
+          },
+          fontFamily: {
+            sans: ["'Plus Jakarta Sans'", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+            serif: ["'Merriweather'", "Georgia", "Cambria", "Times New Roman", "serif"]
+          },
+          boxShadow: {
+            card: "0 10px 30px -10px rgba(10, 31, 68, 0.12)",
+            goldGlow: "0 10px 25px -5px rgba(245, 184, 0, 0.35)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Custom subtle academic background grid & passport proportions */
+    .hero-academic-bg {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(245, 184, 0, 0.16) 0%, transparent 42%),
+        radial-gradient(circle at 12% 85%, rgba(30, 78, 150, 0.45) 0%, transparent 48%),
+        linear-gradient(135deg, #06132B 0%, #0A1F44 52%, #0F2C59 100%);
+      position: relative;
+    }
+
+    .hero-grid-overlay {
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+
+    /* Passport-size photo slot (3.5 : 4.5 ratio) */
+    .passport-frame {
+      aspect-ratio: 3.5 / 4.5;
+    }
+
+    /* Ticker marquee animation */
+    @keyframes tickerScroll {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: tickerScroll 28s linear infinite;
+    }
+
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    /* Custom scrollbar for tables/modals */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748b;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-gold-400 selection:text-navy-950 overflow-x-hidden">
+
+  <!-- ===================================================================== -->
+  <!-- LIVE ANNOUNCEMENT BANNER                                              -->
+  <!-- ===================================================================== -->
+  <div class="bg-gold-400 text-navy-950 border-b border-gold-500/50 py-2 overflow-hidden">
+    <div class="ticker-track items-center text-xs sm:text-sm font-bold tracking-wide">
+      <div class="flex items-center gap-8 px-6 whitespace-nowrap">
+        <span id="announcement-text-1">Admissions Open for Classes 1 to 10 &amp; Special Jawahar Navodaya Vidyalaya (JNV) Entrance Coaching at Tarajan, Dhemaji, Assam!</span>
+        <span class="text-navy-800/40">•</span>
+        <span>Call / WhatsApp: 8638278588 | 9707179366</span>
+        <span class="text-navy-800/40">•</span>
+      </div>
+      <div class="flex items-center gap-8 px-6 whitespace-nowrap" aria-hidden="true">
+        <span id="announcement-text-2">Admissions Open for Classes 1 to 10 &amp; Special Jawahar Navodaya Vidyalaya (JNV) Entrance Coaching at Tarajan, Dhemaji, Assam!</span>
+        <span class="text-navy-800/40">•</span>
+        <span>Call / WhatsApp: 8638278588 | 9707179366</span>
+        <span class="text-navy-800/40">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- NAVIGATION BAR                                                        -->
+  <!-- ===================================================================== -->
+  <header id="top" class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md text-white border-b border-white/10 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20 gap-3">
+
+        <!-- Custom SVG Crest Logo + Institution Name -->
+        <a href="#home" class="flex items-center gap-2.5 sm:gap-3 min-w-0 group focus:outline-none">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 shrink-0 rounded-xl bg-gradient-to-br from-gold-300 via-gold-400 to-gold-600 p-0.5 shadow-goldGlow group-hover:scale-105 transition-transform">
+            <div class="w-full h-full bg-navy-950 rounded-[10px] flex items-center justify-center">
+              <!-- Custom Education Crest SVG -->
+              <svg viewBox="0 0 64 64" class="w-7 h-7 sm:w-8 sm:h-8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M32 7L35.2 14.2L43 15.1L37.2 20.3L38.8 28L32 24.1L25.2 28L26.8 20.3L21 15.1L28.8 14.2L32 7Z" fill="#F5B800" />
+                <path d="M12 37C12 34.5 14.5 33 18 33C23.5 33 28.5 35.2 32 38C35.5 35.2 40.5 33 46 33C49.5 33 52 34.5 52 37V51C52 49.5 49.5 48.5 46 48.5C40.5 48.5 35.5 50.5 32 53.5C28.5 50.5 23.5 48.5 18 48.5C14.5 48.5 12 49.5 12 51V37Z" fill="#FFFFFF" />
+                <path d="M32 38V53.5" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M17 39.5H27M17 44H27M37 39.5H47M37 44H47" stroke="#0F2C59" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="min-w-0">
+            <div class="font-serif font-black text-xs sm:text-sm md:text-base tracking-tight text-white leading-tight truncate">
+              BRIGHT FUTURE <span class="text-gold-400">TUITION CENTRE</span>
+            </div>
+            <div class="text-[10px] sm:text-[11px] text-gold-300/90 font-medium truncate">
+              Tarajan, Dhemaji, Assam
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu (8 Required Items) -->
+        <nav class="hidden xl:flex items-center gap-1 text-sm font-semibold" aria-label="Primary Navigation">
+          <a href="#home" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-gold-400 hover:bg-white/5 transition">Home</a>
+          <a href="#about" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-gold-400 hover:bg-white/5 transition">About Us</a>
+          <a href="#courses" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-gold-400 hover:bg-white/5 transition">Courses</a>
+          <a href="#faculty" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-gold-400 hover:bg-white/5 transition">Faculty</a>
+          <a href="#students" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-gold-400 hover:bg-white/5 transition">Our Students</a>
+          <a href="#registration" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-gold-400 hover:bg-white/5 transition">Registration</a>
+          <a href="#gallery" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-gold-400 hover:bg-white/5 transition">Gallery</a>
+          <a href="#contact" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-gold-400 hover:bg-white/5 transition">Contact Us</a>
+        </nav>
+
+        <!-- Action Buttons: Enroll Now + Admin -->
+        <div class="flex items-center gap-2 shrink-0">
+          <a href="#registration" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gold-400 hover:bg-gold-300 text-navy-950 font-extrabold text-xs sm:text-sm shadow-goldGlow transition">
+            <span>ENROLL NOW</span>
+          </a>
+          <button type="button" onclick="openAdminModal()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/15 font-bold text-xs sm:text-sm transition" title="Administrator Login">
+            <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <span id="nav-admin-label">Admin</span>
+          </button>
+
+          <!-- Mobile Hamburger Button -->
+          <button type="button" id="mobile-menu-btn" onclick="toggleMobileMenu(true)" class="xl:hidden p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Over Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div onclick="toggleMobileMenu(false)" class="fixed inset-0 bg-navy-950/75 backdrop-blur-xs transition-opacity"></div>
+    <aside class="fixed top-0 right-0 bottom-0 w-72 max-w-[85vw] bg-navy-900 text-white shadow-2xl border-l border-white/10 flex flex-col justify-between p-5 overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+          <div>
+            <p class="font-serif font-bold text-sm text-gold-400">BRIGHT FUTURE</p>
+            <p class="text-xs text-slate-300">Tarajan, Dhemaji, Assam</p>
+          </div>
+          <button type="button" onclick="toggleMobileMenu(false)" class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white" aria-label="Close menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="mt-4 flex flex-col gap-1 text-sm font-semibold">
+          <a href="#home" onclick="toggleMobileMenu(false)" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 hover:text-gold-400 transition">1. Home</a>
+          <a href="#about" onclick="toggleMobileMenu(false)" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 hover:text-gold-400 transition">2. About Us</a>
+          <a href="#courses" onclick="toggleMobileMenu(false)" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 hover:text-gold-400 transition">3. Courses</a>
+          <a href="#faculty" onclick="toggleMobileMenu(false)" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 hover:text-gold-400 transition">4. Faculty</a>
+          <a href="#students" onclick="toggleMobileMenu(false)" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 hover:text-gold-400 transition">5. Our Students</a>
+          <a href="#registration" onclick="toggleMobileMenu(false)" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 hover:text-gold-400 transition">6. Registration</a>
+          <a href="#gallery" onclick="toggleMobileMenu(false)" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 hover:text-gold-400 transition">7. Gallery</a>
+          <a href="#contact" onclick="toggleMobileMenu(false)" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 hover:text-gold-400 transition">8. Contact Us</a>
+        </nav>
+
+        <div class="mt-5 pt-4 border-t border-white/10 flex flex-col gap-2.5">
+          <a href="#registration" onclick="toggleMobileMenu(false)" class="w-full py-2.5 px-4 rounded-xl bg-gold-400 hover:bg-gold-300 text-navy-950 font-extrabold text-center text-sm shadow-goldGlow">
+            ENROLL NOW
+          </a>
+          <button type="button" onclick="toggleMobileMenu(false); openAndroidInstallGuide();" class="w-full py-2.5 px-4 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-200 font-bold text-center text-sm border border-emerald-400/30">
+            📱 Android App Setup
+          </button>
+          <button type="button" onclick="toggleMobileMenu(false); openAdminModal();" class="w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-center text-sm border border-white/15">
+            Administrator Login
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-white/10 text-xs text-slate-300 space-y-1.5">
+        <p class="font-bold text-gold-300">Direct Helpline</p>
+        <p><a href="tel:8638278588" class="hover:underline">📞 8638278588</a></p>
+        <p><a href="tel:9707179366" class="hover:underline">📞 9707179366</a></p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 1. HOME SECTION                                                       -->
+  <!-- ===================================================================== -->
+  <section id="home" class="hero-academic-bg text-white overflow-hidden">
+    <div class="hero-grid-overlay absolute inset-0 pointer-events-none"></div>
+
+    <!-- Decorative Academic SVG Emblem on Right (Desktop) -->
+    <div class="hidden lg:block absolute -right-12 top-1/2 -translate-y-1/2 w-[440px] h-[440px] opacity-10 pointer-events-none select-none">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="92" stroke="#F5B800" stroke-width="2.5" stroke-dasharray="6 6" />
+        <circle cx="100" cy="100" r="72" stroke="#FFFFFF" stroke-width="1.5" />
+        <path d="M100 32L112 65L147 67L120 89L129 124L100 104L71 124L80 89L53 67L88 65L100 32Z" fill="#F5B800" />
+        <path d="M45 148C65 138 85 140 100 152C115 140 135 138 155 148" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-18 lg:py-22">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+
+        <!-- Hero Main Copy -->
+        <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+          <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-gold-400/40 text-gold-300 text-xs sm:text-sm font-bold">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            <span>ADMISSIONS OPEN: CLASSES 1 TO 10 &amp; JNV COACHING</span>
+          </div>
+
+          <h1 class="font-serif font-black text-2xl sm:text-4xl lg:text-[42px] leading-tight tracking-tight text-white">
+            WELCOME TO <span class="text-gold-400">BRIGHT FUTURE TUITION CENTRE</span>
+          </h1>
+
+          <p class="text-lg sm:text-2xl font-extrabold text-gold-300 tracking-tight">
+            Your Bright Future Begins Here.
+          </p>
+
+          <p class="text-xs sm:text-sm italic text-slate-200 border-l-4 border-gold-400 pl-3.5">
+            "Building Knowledge Today, Creating Successful Tomorrows." — <span id="hero-location-label" class="not-italic font-semibold text-white">Tarajan, Dhemaji, Assam, India</span>
+          </p>
+
+          <p class="text-sm sm:text-base text-slate-200 leading-relaxed max-w-2xl">
+            At <strong class="text-white">BRIGHT FUTURE TUITION CENTRE</strong> in Tarajan, Dhemaji, Assam, we nurture curious young minds through structured classroom guidance, concept clarity, and personal mentorship. Admissions are open for <strong class="text-gold-300">Classes 1 to 10</strong> along with dedicated <strong class="text-gold-300">Jawahar Navodaya Vidyalaya (JNV) Entrance Examination</strong> coaching.
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
+            <a href="#registration" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gold-400 hover:bg-gold-300 text-navy-950 font-extrabold text-sm sm:text-base shadow-goldGlow transition transform hover:-translate-y-0.5">
+              <span>Enroll Now</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold text-sm sm:text-base transition">
+              <span>Contact Us</span>
+            </a>
+            <button type="button" onclick="openAndroidInstallGuide()" class="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded-xl bg-navy-950/70 hover:bg-navy-950 text-gold-300 border border-gold-400/35 font-bold text-xs sm:text-sm transition">
+              <span>📱 Install on Android</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Highlights & Animated Promotional Showcase Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-white/95 text-navy-900 rounded-3xl p-6 sm:p-7 shadow-2xl border-2 border-gold-400/70 space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+              <div>
+                <span class="text-[11px] font-extrabold uppercase tracking-wider text-gold-600">Academic Highlights</span>
+                <h2 class="font-serif text-lg sm:text-xl font-bold text-navy-900">Why Choose Bright Future?</h2>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-navy-900 text-gold-400 text-xs font-extrabold">Class 1–10</span>
+            </div>
+
+            <ul class="space-y-3.5 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-6 h-6 rounded-lg bg-gold-100 text-navy-900 font-extrabold flex items-center justify-center shrink-0">✓</span>
+                <div>
+                  <p class="font-bold text-navy-900">Classes 1 to 10 School Coaching</p>
+                  <p class="text-xs text-slate-600">Strong subject foundations, homework support, and regular unit tests.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 w-6 h-6 rounded-lg bg-gold-100 text-navy-900 font-extrabold flex items-center justify-center shrink-0">★</span>
+                <div>
+                  <p class="font-bold text-navy-900">Special JNV Entrance Preparation</p>
+      
